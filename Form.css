@@ -2,11 +2,14 @@
     padding: 0%;
     margin: 0%;
 }
+
+body{
+    width: 100%;
+    height: 100%;
+}
 main {
-    width: 1440px;
-    height: 840px;
-    margin-block-start: 90px;
-    margin-inline-start: 300px;
+    width: 100%;
+    height: 100%;
     gap: 120px;
     opacity: 0px;
     background-color: rgb(225,255,255,1);
@@ -29,7 +32,7 @@ main {
     box-shadow: 0px 4px 10px 0px #0000001A;
     background-color: rgb(225,255,255,1);
 }
-.first h1 {
+.first h1{
     width: 268px;
     height: 50px;
     margin-block-start: 50px;
@@ -43,7 +46,7 @@ main {
     text-align: left;
     color:#000B0A;
 }
-.first p {
+.first p{
     width: 460px;
     height: 75px;
     margin-block-start: 20px;
@@ -58,12 +61,13 @@ main {
 }
 .second {
     width: 580px;
-    height: 679px;
-    margin-block-start: 81px;
+    height: 620px;
+    margin-block-start: 20px;
     opacity: 0px; 
     box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
     background-color: #ffffff;
     border-radius: 6px;
+    position: relative;
 }
 
 .FST {
@@ -72,7 +76,7 @@ main {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    margin-block-start: 40px;
+    margin-block-start: 25px;
     margin-inline-start: 40px;
 }
 .fn {
@@ -94,7 +98,7 @@ main {
 
 #hold {
     width: 238px;
-    height: 48px;
+    height: 35px;
     margin-block-start: 8px;
     gap: 0px;
     opacity: 0px;
@@ -103,7 +107,7 @@ main {
 
 #h1 {
     width: 500px;
-    height: 48px;
+    height: 35px;
     margin-block-start: 8px;
     gap: 0px;
     opacity: 0px;
@@ -115,7 +119,7 @@ main {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    margin-block-start: 30px;
+    margin-block-start: 25px;
     margin-inline-start: 40px;
 }
 
@@ -125,28 +129,28 @@ main {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    margin-block-start: 30px;
+    margin-block-start: 25px;
     margin-inline-start: 40px;
 }
 
 .FTH {
     width: 500px;
     height: 72px;
-    margin-block-start: 30px;
+    margin-block-start: 25px;
     margin-inline-start: 40px;
 }
 
 .FIT {
     width: 500px;
     height: 72px;
-    margin-block-start: 30px;
+    margin-block-start: 25px;
     margin-inline-start: 40px;
 }
 
 button{
     width: 500px;
-    height: 48px;
-    margin-block-start: 30px;
+    height: 36px;
+    margin-block-start: 25px;
     margin-inline-start: 40px;
     gap: 0px;
     opacity: 0px;
@@ -183,7 +187,8 @@ span {
     text-decoration: underline;
     color: #2EC4B6;
 }
-.ptext{
+
+.first h4{
     display: none;
 }
 @media only screen and (max-width: 375px) {
@@ -212,6 +217,25 @@ span {
         gap: 0px;
         opacity: 0px;
     }
+    .first p{
+        display: none;
+    }
+
+    .first h4{
+        display: block;
+        width: 327px;
+        height: 50px;
+        margin-block-start: 12px;
+        left: 24px;
+        gap: 0px;
+        opacity: 80%;
+        font-family: Brown;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 25px;
+        text-align: left;
+        color: #737373;
+    }
 
     .first h1{
         width: 372px;
@@ -223,9 +247,7 @@ span {
         letter-spacing: -0.800000011920929px;
         text-align: left;
     }
-    .first p{
-        display: none;
-    }
+    
     #hold{
         width: 295px;
         height: 48px;
@@ -241,19 +263,10 @@ span {
         gap: 0px;
         opacity: 0px;
     }
-    .ptext{
-        display: inline;
-        width: 327px;
-        height: 50px;
-        left: 24px;
-        gap: 0px;
-        opacity: 0px;
-
-    }
     .second{
         width: 327px;
         height: 870px;
-        margin-block-start: 320px;
+        margin-block-start: 300px;
         margin-inline-start: -380px;
         gap: 0px;
         border-radius: 6px;
